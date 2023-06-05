@@ -120,10 +120,17 @@
   letter-spacing: 0.02em;
   color: #595959;
 }
-
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-inline: auto;
+}
 .card {
+   margin-top: 20px;
   box-sizing: border-box;
-  width: 170px;
+  width: 250px;
   height: 100px;
   background: #ffffff;
   border: 1px solid #d8d7d7;
@@ -149,7 +156,7 @@
 }
 .overall-analysis {
   width: 528px;
-  margin-top: 10px;
+  margin-top: 0px;
   background: #ffffff;
   border: 1.5px solid rgba(235, 235, 235, 0.8);
   border-radius: 18px;
@@ -182,6 +189,7 @@
   display: flex;
   width: 528px;
   margin-top: 10px;
+  align-items: center;
   background: rgb(252, 234, 98);
   font-family: "Satoshi", sans-serif;
   font-weight: 775;
@@ -189,7 +197,35 @@
   border: 1.5px solid rgba(235, 235, 235, 0.8);
   border-radius: 10px;
   padding: 10px;
-  margin-left: 20px;
-  margin-bottom: 10px;
+  margin-inline: 10px;
   line-height: 18px;
+}
+.download-btn{
+  margin-left: 5px;
+}
+.analysis-box{
+  display: flex;
+  justify-content: space-between;
+}
+#analysis-text-id-dsa{
+  padding: 5px;
+  line-height: 16px;
+  flex: 1;
+}
+#analysis-text-id-frontend{
+  line-height: 16px;
+  padding: 5px;
+  flex: 1;
+}
+#title {
+  font-weight: bold;
+}
+
+#content {
+  margin-top: 5px;
+}
+
+#basics {
+  font-weight:900;
+  background-color: rgb(252, 234, 98);
 }

@@ -10,12 +10,59 @@ const OA = (yo) => {
   const [DSA,setDSA]=useState("beginner")
   const [Frontend,setFrontend]=useState("beginner")
   const DSApaths={
-    beginner:``,
-    intermediate:``
+    beginner:`<div>
+    <div id="title">
+    <h2>Suggested DSA Learning Roadmap:</h2>
+    </div>
+    <h3>We believe you’re at a beginner level.</h3>
+    <p><strong id="basics">Understand the Fundamentals:</strong> Learn essential data structures and basic algorithms. Understand concepts and time complexities.</p>
+    <p><strong id="basics">Practice, Practice, Practice:</strong> Solve a wide range of DSA problems, starting from easy to complex. Utilize coding platforms and challenges.</p>
+    <p><strong id="basics">Dive Deeper:</strong> Explore advanced data structures, algorithms, and their real-world applications.</p>
+    <p><strong id="basics">Analyze and Optimize:</strong> Learn to analyze time and space complexity. Strive for optimized solutions.</p>
+    <p><strong id="basics">Collaborate and Seek Guidance:</strong> Engage with the DSA community, join coding groups, and seek guidance from mentors.</p>
+  </div>
+  `,
+    intermediate:`<div>
+    <div id="title">
+    <h2>Suggested DSA Learning Roadmap:</h2>
+    </div>
+    <h3>We believe you’re at an intermediate level.</h3>
+    <p><strong id="basics">Strengthen the Basics:</strong> Solidify fundamental data structures and algorithms. Review key concepts and analyze complexities.</p>
+    <p><strong id="basics">Dive into Advanced Topics:</strong> Explore advanced data structures (trees, graphs, hash tables) and complex algorithms (dynamic programming, backtracking).</p>
+    <p><strong id="basics">Practice with Purpose:</strong> Solve challenging DSA problems, participate in coding contests, and work on real-world projects.</p>
+    <p><strong id="basics">Learn from Experts:</strong> Access resources, tutorials, and courses to gain insights from experienced instructors.</p>
+    <p><strong id="basics">Collaborate and Share:</strong> Engage with the DSA community, join coding communities, and participate in collaborative challenges.</p>
+  </div>
+  `
   }
   const Frontendpaths={
-    beginner:``,
-    intermediate:``
+    beginner:`<div id="container">
+    <div id="title">
+    <h2>Suggested Full-Stack Development Roadmap:</h2>
+    </div>
+    <h3>We believe you’re at a beginner level.</h3>
+    <div id="content">
+      <p><strong id="basics">Front-end Framework:</strong> Deepen JavaScript knowledge. Learn a framework (React, Angular, Vue).</p>
+      <p><strong id="basics">Backend Framework:</strong> Choose a corresponding backend framework (Express.js for Node.js, Django or Flask for Python, etc). Learn about Authentication & Authorization.</p>
+      <p><strong id="basics">Full-Stack Project:</strong> Develop a full-stack web application.</p>
+      <p><strong id="basics">Internship:</strong> Apply for internships or junior developer roles.</p>
+      <p><strong id="basics">Communication:</strong> Improve technical communication skills.</p>
+    </div>
+  </div>`,
+    intermediate:`<div class="container">
+    <div>
+    <h2>Suggested Full-Stack Development Roadmap:</h2>
+    </div>
+    <h3>We believe you’re at an intermediate level.</h3>
+    <div>
+  <p><strong id="basics">Front-end &amp; Back-end:</strong> Dive into frameworks, learn state management, routing, and advanced CSS.</p>
+  <p><strong id="basics">Database:</strong> Explore ORM, migrations, and optimize database performance.</p>
+  <p><strong id="basics">Cloud &amp; Deployment:</strong> Deploy apps on AWS, Google Cloud, Azure, scale apps, and manage resources.</p>
+  <p><strong id="basics">Projects:</strong> Develop complex full-stack applications, contribute to open-source projects.</p>
+  <p><strong id="basics">Soft Skills:</strong> Improve technical communication, problem-solving, teamwork, learn Agile, Scrum.</p>
+</div>
+
+  `
   }
   const qualificationCriteria = [
     {
@@ -306,10 +353,14 @@ const OA = (yo) => {
       setDSA("Intermediate");
     }
     checkfrontend();
-    // const element = document.getElementById("analysis-text-id");
-    // if (element) {
-    //   element.innerHTML = analysisText;
-    // }
+    const dsaelement = document.getElementById("analysis-text-id-dsa");
+    if (dsaelement) {
+      dsaelement.innerHTML =DSApaths[DSA];
+    }
+    const frontendelement = document.getElementById("analysis-text-id-frontend");
+    if (frontendelement) {
+      frontendelement.innerHTML =Frontendpaths[Frontend];
+    }
     // const CTAelement = document.getElementById("cta-text");
     // if (CTAelement) {
     //   CTAelement.innerHTML = CTAText;
@@ -319,13 +370,15 @@ const OA = (yo) => {
     <>
       <div className="overall-analysis">
         <h1>Overall analysis 🔍</h1>
-        <div id="analysis-text-id" className="analysis-text"></div>
+        <div className="analysis-box">
+        <div id="analysis-text-id-dsa" className="analysis-text"></div>
+        <div id="analysis-text-id-frontend" className="analysis-text"></div>
+        </div>
       </div>
+      
       <div className="end-box">
         <div id="cta-text">
-          Want to know how AccioJob can help you in this process? Register NOW
-          and Join AccioJob's FREE Live course on the 3rd and 16th of every
-          month.
+          Want to know how AccioJob can help you in this process and land a high paying tech job?
         </div>
         <button
           className="redirect-button download-btn"

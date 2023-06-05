@@ -20,15 +20,12 @@ import OA from "./OA";
 // Chart.scaleService.addScalesToMap(LinearScale);
 
 function App(yo) {
-  console.log(yo.data,"ayush");
+  console.log(yo.data, "ayush");
   const DSAData = {
     labels: ["Correct", "Incorrect"],
     datasets: [
       {
-        data: [
-          yo.data["Backend Score"],
-          70- yo.data["Backend Score"]
-        ],
+        data: [yo.data["Backend Score"], 70 - yo.data["Backend Score"]],
         backgroundColor: ["#1FB79D", "#FE7C7A"],
         borderWidth: 2,
       },
@@ -38,16 +35,12 @@ function App(yo) {
     labels: ["Correct", "Incorrect"],
     datasets: [
       {
-        data: [
-          yo.data["Frontend Score"],
-          30- yo.data["Frontend Score"]
-        ],
+        data: [yo.data["Frontend Score"], 30 - yo.data["Frontend Score"]],
         backgroundColor: ["#1FB79D", "#FE7C7A"],
         borderWidth: 2,
       },
     ],
   };
-  
 
   const options = {
     indexAxis: "y",
@@ -55,7 +48,7 @@ function App(yo) {
       legend: { display: false, position: "right" },
     },
     maintainAspectRatio: false,
-    barThickness: 12,
+    barThickness: 20,
   };
   const pdfoptions = {
     orientation: "portrait",
@@ -92,7 +85,7 @@ function App(yo) {
             <div className="row-1">
               <div className="col-1">
                 <img src={CATTitle} alt="title Image" />
-                <p className="col-1-text-1">Hello, {yo.data.Name}!</p>
+                <p className="col-1-text-1">Hello, {yo.data["Full Name"]}!</p>
                 <p className="col-1-text-2">
                   Here’s you percentage result based on your performance
                   analysis
@@ -100,7 +93,9 @@ function App(yo) {
                 <div className="percentage-div">
                   <img src={percentagecard} alt="card title" />
                   <p className="percentage-text">
-                    {parseInt(yo.data["Frontend Score"])+parseInt(yo.data["Backend Score"])}%
+                    {parseInt(yo.data["Frontend Score"]) +
+                      parseInt(yo.data["Backend Score"])}
+                    %
                   </p>
                 </div>
               </div>
@@ -117,17 +112,18 @@ function App(yo) {
                     options={PieOptions}
                   /> */}
                 </div>
-                <div className="card ">
-                <p className="card-heading">DSA Analysis</p>
-                <Bar data={DSAData} options={options} />
-              </div>
-              <div className="card ">
-                <p className="card-heading">Dev Analysis</p>
-                <Bar data={FrontendData} options={options} />
-              </div>
+                <div className="cards">
+                  <div className="card ">
+                    <p className="card-heading">DSA Analysis</p>
+                    <Bar data={DSAData} options={options} />
+                  </div>
+                  <div className="card ">
+                    <p className="card-heading">Dev Analysis</p>
+                    <Bar data={FrontendData} options={options} />
+                  </div>
+                </div>
               </div>
             </div>
-           
 
             <OA data={yo.data} />
           </div>
