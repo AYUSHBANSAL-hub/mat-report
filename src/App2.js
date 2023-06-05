@@ -10,12 +10,12 @@ function App2() {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://sheet.best/api/sheets/0c8edda4-4ec1-4756-9326-d4807c7cedf6"
+          "https://sheet.best/api/sheets/2fb4d416-fc94-42dc-8e63-13432e1fbd04"
         );
         const result = await response.json();
         setData(result);
-        //console.log(result);
-        //console.log(result[0]["Response ID"]);
+        console.log(result);
+        //console.log(result[0]["Submission ID"]);
       } catch (error) {
         //console.log("error", error);
       }
@@ -28,7 +28,8 @@ function App2() {
     <Router>
       <Routes>
         {data.map((item) => (
-          <Route path={item[["Response ID"]]} element={<App data={item} />} />
+          //console.log(item["Submission ID"])
+          <Route path={item["Submission ID"]} element={<App data={item} />} />
         ))}
       </Routes>
     </Router>
