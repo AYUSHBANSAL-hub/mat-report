@@ -1,0 +1,195 @@
+/** @format */
+* {
+  margin: 0;
+}
+.App {
+  background-color: gray !important;
+  display: flex;
+  /*
+  justify-content: center;
+  margin-inline: auto; */
+  /* width: 600px; */
+}
+.Report {
+  background: #ffffff;
+}
+.download-button {
+  position: fixed;
+  right: 22vw;
+  top: 50vh;
+  display: flex;
+}
+
+.row-1 {
+  display: flex;
+  margin-top: -112px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.TestAnalysis {
+  position: relative;
+  background: #ffffff;
+  border: 1.5px solid rgba(235, 235, 235, 0.8);
+  border-radius: 18px;
+  padding: 10px 10px 20px;
+  /* gap: 18px; */
+  width: 256.09px;
+  height: 301px;
+  z-index: 1000 !important;
+}
+
+.col-1 {
+  padding: 18px 18px 28px;
+  width: 245.09px;
+  height: 301px;
+}
+.col-1-text-1 {
+  margin: 0px;
+  margin-top: 22px;
+  font-family: "Satoshi", sans-serif;
+
+  font-style: normal;
+  font-weight: 550;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+
+  /* Black */
+
+  color: #2b2f34;
+}
+
+.col-1-text-2 {
+  margin: 0px;
+  font-family: "Satoshi", sans-serif;
+
+  font-style: normal;
+  font-weight: 450;
+  font-size: 10.5px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+
+  /* TEXT LABEL COLORS / CHARCOAL */
+
+  color: #595959;
+}
+.percentage-div {
+  margin-top: 40px;
+}
+
+.percentage-div > img {
+  width: 240px;
+}
+.percentage-text {
+  margin: 0px;
+  margin-top: -57px;
+  margin-left: 15px;
+  font-family: "Satoshi", sans-serif;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31.8462px;
+  line-height: 43px;
+  /* identical to box height */
+
+  letter-spacing: 0.02em;
+
+  color: #00af91;
+
+  opacity: 0.9;
+}
+.Analysis-text-1 {
+  margin: 0px;
+  width: 140px;
+  height: 30px;
+  font-family: "Satoshi", sans-serif;
+  font-style: normal;
+  font-weight: 775;
+  font-size: 22px;
+  color: #2b2f34;
+}
+.Analysis-text-2 {
+  margin: 0px;
+  width: 220.09px;
+  height: 28px;
+  font-family: "Satoshi", sans-serif;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 10.5px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  color: #595959;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 170px;
+  height: 100px;
+  background: #ffffff;
+  border: 1px solid #d8d7d7;
+  border-radius: 5px;
+  padding-bottom: 20px;
+}
+.card-heading {
+  margin: 0px;
+  margin-top: 10px;
+  font-family: "Satoshi", sans-serif;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #535353;
+}
+.row-2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.overall-analysis {
+  width: 528px;
+  margin-top: 10px;
+  background: #ffffff;
+  border: 1.5px solid rgba(235, 235, 235, 0.8);
+  border-radius: 18px;
+  padding: 18px;
+  margin-left: 14px;
+}
+
+.overall-analysis > h1 {
+  font-family: "Satoshi", sans-serif;
+  font-style: normal;
+  font-weight: 775;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height */
+  margin-top: -10px;
+  letter-spacing: 0.02em;
+
+  /* Black */
+
+  color: #2b2f34;
+}
+.analysis-text {
+  margin-top: 0px;
+  font-family: "Satoshi", sans-serif;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 17px;
+}
+.end-box {
+  display: flex;
+  width: 528px;
+  margin-top: 10px;
+  background: rgb(252, 234, 98);
+  font-family: "Satoshi", sans-serif;
+  font-weight: 775;
+  font-style: normal;
+  border: 1.5px solid rgba(235, 235, 235, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  line-height: 18px;
+}
