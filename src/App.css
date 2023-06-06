@@ -11,47 +11,50 @@
   /* width: 600px; */
 }
 .Report {
-  background: #ffffff;
+  background: #E6F2FF;
 }
+
 .download-button {
   position: fixed;
   right: 22vw;
   top: 50vh;
   display: flex;
 }
-
-.row-1 {
+.header-image{
   display: flex;
-  margin-top: -112px;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: auto;
   justify-content: center;
+  margin-top: -20px;
 }
-.TestAnalysis {
-  position: relative;
-  background: #ffffff;
-  border: 1.5px solid rgba(235, 235, 235, 0.8);
-  border-radius: 18px;
-  padding: 10px 10px 20px;
-  /* gap: 18px; */
-  width: 256.09px;
-  height: 301px;
-  z-index: 1000 !important;
+.header-image>img{
+  height: 150px;
+}
+.header-2{
+  margin-top: -40px;
+  font-family: "Satoshi", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+}
+.row-1 {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .col-1 {
-  padding: 18px 18px 28px;
-  width: 245.09px;
-  height: 301px;
+  text-align: center;
 }
 .col-1-text-1 {
   margin: 0px;
-  margin-top: 22px;
   font-family: "Satoshi", sans-serif;
-
   font-style: normal;
-  font-weight: 550;
-  font-size: 22px;
-  line-height: 32px;
+  font-weight: 900;
+  font-size: 17px;
   letter-spacing: 0.02em;
 
   /* Black */
@@ -62,41 +65,40 @@
 .col-1-text-2 {
   margin: 0px;
   font-family: "Satoshi", sans-serif;
-
   font-style: normal;
+  text-align: center;
   font-weight: 450;
-  font-size: 10.5px;
-  line-height: 14px;
+  font-size: 17px;
+  line-height: 20px;
   letter-spacing: 0.02em;
-
+  width: 80%;
   /* TEXT LABEL COLORS / CHARCOAL */
 
   color: #595959;
 }
 .percentage-div {
-  margin-top: 40px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+  width: 70%;
 }
 
-.percentage-div > img {
-  width: 240px;
+.percentage-text-1{
+  font-family: "Satoshi", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21.5px;
 }
 .percentage-text {
   margin: 0px;
-  margin-top: -57px;
-  margin-left: 15px;
+  padding-top: 10px;
   font-family: "Satoshi", sans-serif;
-
   font-style: normal;
   font-weight: 700;
-  font-size: 31.8462px;
+  font-size: 50px;
   line-height: 43px;
-  /* identical to box height */
-
   letter-spacing: 0.02em;
-
-  color: #00af91;
-
-  opacity: 0.9;
 }
 .Analysis-text-1 {
   margin: 0px;
@@ -120,63 +122,67 @@
   letter-spacing: 0.02em;
   color: #595959;
 }
-.cards{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  margin-inline: auto;
-}
+
 .card {
-   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   box-sizing: border-box;
-  width: 250px;
+  width: 100%;
   height: 100px;
-  background: #ffffff;
-  border: 1px solid #d8d7d7;
-  border-radius: 5px;
   padding-bottom: 20px;
 }
 .card-heading {
   margin: 0px;
   margin-top: 10px;
   font-family: "Satoshi", sans-serif;
-
   font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 16px;
+  font-weight: 900;
+  font-size: 26px;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #535353;
+  color: #404040;
+}
+.card-heading-1,.card-heading-4{
+  margin: 0px;
+  font-family: "Satoshi", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 17px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #404040;
+}
+.card-heading-2,.card-heading-3{
+  margin: 0px;
+  margin-top: 50px;
+  font-family: "Satoshi", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #404040;
+  font-weight: 900;
+
+}
+.card-heading-4{
+  margin-top: 18px;
+  z-index: 2;
 }
 .row-2 {
   display: flex;
   justify-content: space-evenly;
 }
 .overall-analysis {
-  width: 528px;
-  margin-top: 0px;
-  background: #ffffff;
-  border: 1.5px solid rgba(235, 235, 235, 0.8);
-  border-radius: 18px;
-  padding: 18px;
-  margin-left: 14px;
+  width: 600px;
+  display: flex;
 }
-
-.overall-analysis > h1 {
-  font-family: "Satoshi", sans-serif;
-  font-style: normal;
-  font-weight: 775;
-  font-size: 20px;
-  line-height: 20px;
-  /* identical to box height */
-  margin-top: -10px;
-  letter-spacing: 0.02em;
-
-  /* Black */
-
-  color: #2b2f34;
+.dsa-col,.full-stack-col{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 1;
 }
 .analysis-text {
   margin-top: 0px;
@@ -185,20 +191,10 @@
   font-size: 13px;
   line-height: 17px;
 }
-.end-box {
-  display: flex;
-  width: 528px;
-  margin-top: 10px;
-  align-items: center;
-  background: rgb(252, 234, 98);
-  font-family: "Satoshi", sans-serif;
-  font-weight: 775;
-  font-style: normal;
-  border: 1.5px solid rgba(235, 235, 235, 0.8);
-  border-radius: 10px;
-  padding: 10px;
-  margin-inline: 10px;
-  line-height: 18px;
+.roadmap{
+  margin-top: -20px;
+  width: 80%;
+  margin-inline: auto;
 }
 .download-btn{
   margin-left: 5px;
@@ -207,14 +203,10 @@
   display: flex;
   justify-content: space-between;
 }
-#analysis-text-id-dsa{
+#analysis-text-id-dsa,#analysis-text-id-frontend{
   padding: 5px;
+  margin-top: 50px;
   line-height: 16px;
-  flex: 1;
-}
-#analysis-text-id-frontend{
-  line-height: 16px;
-  padding: 5px;
   flex: 1;
 }
 #title {
