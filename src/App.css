@@ -228,3 +228,13 @@
   font-weight:900;
   background-color: rgb(252, 234, 98);
 }
+
+@media screen and (max-width: 980px) {
+  .download-button {
+    position: absolute;
+    bottom: -100px;
+    right: auto;
+    top: auto;
+    left: 50%;
+  }
+}
