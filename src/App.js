@@ -61,7 +61,7 @@ function App(yo) {
                 Here’s you percentage result based on your performance analysis
               </p>
               <div className="percentage-div">
-                <div>
+                <div className="percentage-child-1">
                   <p className="percentage-text-1">Total percentage</p>
                   <p className="percentage-text">
                     {parseInt(yo.data["Frontend Score"]) +
