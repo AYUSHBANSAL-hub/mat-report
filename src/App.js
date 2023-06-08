@@ -17,6 +17,7 @@ import Chart from "chart.js/auto";
 import { LinearScale } from "chart.js";
 import ReactToPdf from "react-to-pdf";
 import OA from "./OA";
+import ProgressBar from "./ProgressBar";
 // Register the linear scale
 // Chart.registerScale("linear", LinearScale);
 // Chart.scaleService.addScalesToMap(LinearScale);
@@ -69,7 +70,8 @@ function App(yo) {
                     %
                   </p>
                 </div>
-                <div></div>
+                  <ProgressBar percent={parseInt(yo.data["Frontend Score"]) +
+                      parseInt(yo.data["DSA Score"])}/>
               </div>
             </div>
              
