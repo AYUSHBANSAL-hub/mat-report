@@ -13,7 +13,7 @@ import dsaintermediate from "./Assets/DSA-intermediate.svg"
 import "./App.css";
 
 const OA = (yo) => {
-  console.log(yo);
+  //console.log(yo);
   const DSAData = {
     labels: ["Correct", "Incorrect"],
     datasets: [
@@ -386,7 +386,7 @@ const OA = (yo) => {
       ] == "Yes" &&
       yo.data["Frontend Score"] == "30"
     ) {
-      console.log("frontend is intermediate");
+      //console.log("frontend is intermediate");
       setFrontend("Intermediate");
     }
   }

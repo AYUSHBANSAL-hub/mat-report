@@ -22,7 +22,7 @@ import OA from "./OA";
 // Chart.scaleService.addScalesToMap(LinearScale);
 
 function App(yo) {
-  console.log(yo.data, "ayush");
+  //console.log(yo.data, "ayush");
 
 
   

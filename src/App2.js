@@ -14,7 +14,7 @@ function App2() {
         );
         const result = await response.json();
         setData(result);
-        console.log(result);
+        //console.log(result);
         //console.log(result[0]["Submission ID"]);
       } catch (error) {
         //console.log("error", error);
