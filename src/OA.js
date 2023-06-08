@@ -377,7 +377,7 @@ const OA = (yo) => {
   //   }
   function checkfrontend() {
     if (
-      yo.data["Have you done any internships?"] == "Yes" &&
+      yo.data["Have you done any tech internships?"] == "Yes" &&
       yo.data[
         "Have you learnt any framework in Back-end like Node, Spring, Django etc?"
       ] == "Yes" &&
@@ -394,7 +394,7 @@ const OA = (yo) => {
     // updatelr();
     // getpsychoscore();
     // findcorrectcareer();
-    if (yo.data["Backend Score"] >= 40) {
+    if (yo.data["DSA Score"] >= 40) {
       setDSA("Intermediate");
     }
     checkfrontend();
