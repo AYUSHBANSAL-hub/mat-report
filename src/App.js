@@ -38,17 +38,7 @@ function App(yo) {
   const ref = React.createRef();
   return (
     <div style={{ backgroundColor: "gray" }}>
-      <ReactToPdf
-        targetRef={ref}
-        filename="MyComponent.pdf"
-        options={pdfoptions}
-      >
-        {({ toPdf }) => (
-          <button className="download-button download-btn" onClick={toPdf}>
-            Download PDF
-          </button>
-        )}
-      </ReactToPdf>
+     
       <div ref={ref}>
         <div className="App">
           <div className="Report">
@@ -80,6 +70,19 @@ function App(yo) {
           </div>
         </div>
       </div>
+      <ReactToPdf
+        targetRef={ref}
+        filename="MyComponent.pdf"
+        options={pdfoptions}
+      >
+        {({ toPdf }) => (
+          <div className="button-div">
+          <button className="download-button download-btn" onClick={toPdf}>
+            Download PDF
+          </button>
+          </div>
+        )}
+      </ReactToPdf>
     </div>
   );
 }

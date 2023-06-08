@@ -231,10 +231,18 @@
 
 @media screen and (max-width: 980px) {
   .download-button {
-    position: absolute;
-    bottom: -100px;
+    position: relative;
+    /* bottom: -100px; */
     right: auto;
     top: auto;
-    left: 50%;
+    left: auto;
+    bottom: auto;
+    display: flex !important;
+    justify-content: flex-end;
+    margin: auto;
+  }
+  .button-div{
+    background-color: white;
+    width: 600px;
   }
 }
