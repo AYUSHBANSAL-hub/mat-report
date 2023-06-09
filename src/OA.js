@@ -18,7 +18,7 @@ const OA = (yo) => {
     labels: ["Correct", "Incorrect"],
     datasets: [
       {
-        data: [yo.data["DSA Score"], 70 - yo.data["DSA Score"]],
+        data: [yo.data["DSA Score"]/10, 7 - (yo.data["DSA Score"]/10)],
         backgroundColor: ["#1FB79D", "#FE7C7A"],
         borderWidth: 2,
       },
@@ -28,7 +28,7 @@ const OA = (yo) => {
     labels: ["Correct", "Incorrect"],
     datasets: [
       {
-        data: [yo.data["Frontend Score"], 30 - yo.data["Frontend Score"]],
+        data: [yo.data["Frontend Score"]/10, 3 - yo.data["Frontend Score"]/10],
         backgroundColor: ["#1FB79D", "#FE7C7A"],
         borderWidth: 2,
       },

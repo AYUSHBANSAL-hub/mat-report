@@ -161,7 +161,8 @@
 }
 .card-heading-2,.card-heading-3{
   margin: 0px;
-  margin-top: 50px;
+  margin-top: 45px;
+  margin-bottom: 5px;
   font-family: "Satoshi", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -170,7 +171,6 @@
   letter-spacing: 0.02em;
   color: #404040;
   font-weight: 900;
-
 }
 .card-heading-4{
   margin-top: 0px;
