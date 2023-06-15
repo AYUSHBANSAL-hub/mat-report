@@ -29,7 +29,7 @@ const Speedometer = ({ value,maxvalue}) => {
         needleTransitionDuration={1000}
         needleColor="#404040"
         ringWidth={20}
-        segments={maxvalue}
+        segments={maxvalue/10}
         startColor="#86C135"
         endColor="#B92828"
       />
