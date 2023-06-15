@@ -52,9 +52,9 @@ const OA = (yo) => {
   // const [CTAText, setCTAText] = useState("");
   const Overview={
     DSAbeginner: "You are at a beginner level in DSA and should focus on learning fundamentals of data structures before progressing to advanced topics. Here's a concise roadmap:",
-    DSAintermediate: "Good start! As an intermediate in DSA with some knowledge, focus on strengthening fundamentals of data structures and then advance to higher topics. Here's a concise roadmap:",
+    DSAIntermediate: "Good start! As an intermediate in DSA with some knowledge, focus on strengthening fundamentals of data structures and then advance to higher topics. Here's a concise roadmap:",
     DEVbeginner: "You are currently at a beginner level. Start by mastering the fundamentals of front-end and back-end development, popular frameworks, and gain experience through hands-on projects.Here’s a concise roadmap:",
-    DEVintermediate: "You’re at an intermediate level. Focus on building complex projects, enhancing your proficiency in front-end and back-end frameworks, database management and deployment strategies.Here’s a concise roadmap: "
+    DEVIntermediate: "You’re at an intermediate level. Focus on building complex projects, enhancing your proficiency in front-end and back-end frameworks, database management and deployment strategies.Here’s a concise roadmap: "
   }
   const [DSA, setDSA] = useState("beginner");
   const [Frontend, setFrontend] = useState("beginner");
