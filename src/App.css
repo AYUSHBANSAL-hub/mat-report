@@ -20,32 +20,55 @@
   top: 50vh;
   display: flex;
 }
+.header-bg{
+  height: 140px;
+  width: 600px;
+  object-fit: cover;
+}
+.accio-nsdc{ 
+  margin-top: -150px;
+  margin-left: -350px;
+  height: 100px;
+}
 .header-image{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-inline: auto;
-  justify-content: center;
-  margin-top: -20px;
+  /* margin-top: -20px; */
+  /* height: 80px */
 }
-.header-image>img{
-  height: 150px;
-}
+
 .header-2{
-  margin-top: -50px;
-  font-family: "Satoshi", sans-serif;
+  margin-top: -25px;
+  font-family: "poppins", sans-serif;
   font-style: normal;
-  font-weight: 900;
-  font-size: 28px;
+  margin-left: 25px;
+  width: 300px;
+  font-weight: 600;
+  font-size: 25px;
 }
 .row-1 {
-  padding-top: 5px;
+  margin-top: -60px;
+  display: flex;
+  align-items:end;
+  justify-content: space-around;
+}
+.row-1>div{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
-
+.meter-1-heading{
+  font-size: 14.8px;
+  font-family: "poppins", sans-serif;
+  padding-bottom: 5px;
+}
+.meter-div-1{
+  width: auto;
+  height: 120px;
+  border-radius: 10px;
+  background-color: white;
+  
+}
 .col-1 {
   text-align: center;
 }
@@ -54,40 +77,33 @@
   font-family: "Satoshi", sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 17px;
+  font-size: 14px;
+  line-height: 17px;
   letter-spacing: 0.02em;
-
-  /* Black */
-
   color: #2b2f34;
 }
-
-.col-1-text-2 {
-  margin: 0px;
-  font-family: "Satoshi", sans-serif;
-  font-style: normal;
-  text-align: center;
-  font-weight: 450;
-  font-size: 17px;
-  line-height: 20px;
-  letter-spacing: 0.02em;
-  width: 80%;
-  /* TEXT LABEL COLORS / CHARCOAL */
-
-  color: #595959;
+.horizontal-line{
+  height: 1px;
+  width: 100%;
+  background-color: #494F56;
+  opacity: 0.3;
+  margin: 15px auto;
+  border-radius: 10px;
 }
 .percentage-div {
   /* background-color: white; */
-  background: rgb(63,135,251);
-  background: linear-gradient(90deg, rgba(63,135,251,1) 0%, rgba(70,228,252,1) 100%);
-  border-radius: 10px;
-  padding: 15px;
+  background: rgb(101, 159, 251);
+  background: linear-gradient(90deg, rgb(105, 156, 239) 0%, rgba(70,228,252,1) 100%);
+  border-radius: 19px;
+  border: 1px solid #0077FF;
+  padding: 25px;
   margin-top: 10px;
-  width: 50%;
+  width: 30%;
   color: white;
 }
 .percentage-child-1{
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
@@ -95,16 +111,19 @@
   font-family: "Satoshi", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 21.5px;
+  font-size: 13px;
+  color: #000;
 }
 .percentage-text {
   margin: 0px;
-  font-family: "Satoshi", sans-serif;
+  font-family: "poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
   line-height: 43px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.05em;
+  color: #404040;
+  margin: 15px auto;
 }
 .Analysis-text-1 {
   margin: 0px;
@@ -159,18 +178,32 @@
   letter-spacing: 0.02em;
   color: #404040;
 }
-.card-heading-2,.card-heading-3{
+.card-heading-2{
   margin: 0px;
-  margin-top: 45px;
+  margin-top: 110px;
   margin-bottom: 5px;
-  font-family: "Satoshi", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 22px;
+  font-size: 13px;
   text-align: center;
   letter-spacing: 0.02em;
   color: #404040;
   font-weight: 900;
+}
+.card-heading-3{
+  margin: 0px;
+  margin-bottom: 5px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  text-align: center;
+  width: 90%;
+  font-style: italic;
+  line-height: 12px;
+  letter-spacing: 0.02em;
+  color: #494F56;
+
 }
 .card-heading-4{
   margin-top: 0px;
@@ -199,8 +232,8 @@
   line-height: 17px;
 }
 .roadmap{
-  margin-top: -20px;
-  width: 80%;
+  width: 90%;
+  padding-bottom: 20px;
   margin-inline: auto;
 }
 .download-btn{

@@ -11,9 +11,15 @@ import devintermediate from "./Assets/DEV-intermediate.svg"
 import dsabeginner from "./Assets/DSA-beginner.svg"
 import dsaintermediate from "./Assets/DSA-intermediate.svg"
 import "./App.css";
+import Speedometer from "./Speedometer";
 
 const OA = (yo) => {
-  //console.log(yo);
+  console.log(yo);
+  const communicate={
+    "Extremely confident":5,
+"Slightly confident":3,
+"Not confident at all":1
+  }
   const DSAData = {
     labels: ["Correct", "Incorrect"],
     datasets: [
@@ -44,6 +50,12 @@ const OA = (yo) => {
   };
   // const [analysisText, setAnalysisText] = useState("");
   // const [CTAText, setCTAText] = useState("");
+  const Overview={
+    DSAbeginner: "You are at a beginner level in DSA and should focus on learning fundamentals of data structures before progressing to advanced topics. Here's a concise roadmap:",
+    DSAintermediate: "Good start! As an intermediate in DSA with some knowledge, focus on strengthening fundamentals of data structures and then advance to higher topics. Here's a concise roadmap:",
+    DEVbeginner: "You are currently at a beginner level. Start by mastering the fundamentals of front-end and back-end development, popular frameworks, and gain experience through hands-on projects.Here’s a concise roadmap:",
+    DEVintermediate: "You’re at an intermediate level. Focus on building complex projects, enhancing your proficiency in front-end and back-end frameworks, database management and deployment strategies.Here’s a concise roadmap: "
+  }
   const [DSA, setDSA] = useState("beginner");
   const [Frontend, setFrontend] = useState("beginner");
 //   const DSApaths = {
@@ -386,14 +398,10 @@ const OA = (yo) => {
       ] == "Yes" &&
       yo.data["Frontend Score"] == "30"
     ) {
-      //console.log("frontend is intermediate");
       setFrontend("Intermediate");
     }
   }
   useEffect(() => {
-    // updatelr();
-    // getpsychoscore();
-    // findcorrectcareer();
     if (yo.data["DSA Score"] >= 40) {
       setDSA("Intermediate");
     }
@@ -419,24 +427,29 @@ const OA = (yo) => {
         <div className="dsa-col">
           <div className="card ">
             <p className="card-heading">DSA Level</p>
-            <p className="card-heading-1">{DSA}</p>
-            <Bar data={DSAData} options={options} />
+            <p className="card-heading-1">{DSA} {yo.data["DSA Score"]}/70</p>
+            {/* <Bar data={DSAData} options={options} /> */}
+            <Speedometer value={yo.data["DSA Score"]/10} maxvalue={7}/>
           </div>
-          {/* <div className="card-heading-2">DSA Analysis</div> */}
-          <div className="card-heading-3">{yo.data["DSA Score"]}/70</div>
-            <p className="card-heading-4">DSA Roadmap</p>
+          <div className="card-heading-2">DSA Analysis-</div>
+          {/* <div className="card-heading-3">{yo.data["DSA Score"]}/70</div> */}
+          <div className="card-heading-3">{Overview[`DSA${DSA}`]}</div>
+          
+            {/* <p className="card-heading-4">DSA Roadmap</p> */}
             <img className="roadmap" src={DSA=="beginner"?dsabeginner:dsaintermediate} alt="header Image" />
           {/* <div id="analysis-text-id-dsa" className="analysis-text"></div> */}
         </div>
         <div className="full-stack-col">
           <div className="card ">
             <p className="card-heading">Full Stack Dev Level</p>
-            <p className="card-heading-1">{Frontend}</p>
-            <Bar data={FrontendData} options={options} />
+            <p className="card-heading-1">{Frontend} {yo.data["Frontend Score"]}/30</p>
+            {/* <Bar data={FrontendData} options={options} /> */}
+            <Speedometer value={yo.data["Frontend Score"]/10} maxvalue={3}/>
           </div>
-          {/* <div className="card-heading-2">DSA Analysis</div> */}
-          <div className="card-heading-3">{yo.data["Frontend Score"]}/30</div>
-          <p className="card-heading-4">Full Stack Dev Roadmap</p>
+          <div className="card-heading-2">Dev Analysis-</div>
+          <div className="card-heading-3">{Overview[`DEV${Frontend}`]}</div>
+          {/* <div className="card-heading-3">{yo.data["Frontend Score"]}/30</div> */}
+          {/* <p className="card-heading-4">Full Stack Dev Roadmap</p> */}
           <img className="roadmap" src={Frontend=="beginner"?devbeginner:devintermediate} alt="header Image" />
           {/* <div id="analysis-text-id-frontend" className="analysis-text"></div> */}
         </div>
