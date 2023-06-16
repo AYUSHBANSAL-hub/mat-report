@@ -61,6 +61,7 @@
   font-size: 14.8px;
   font-family: "poppins", sans-serif;
   padding-bottom: 5px;
+  font-weight: 900;
 }
 .meter-div-1{
   width: auto;
@@ -74,7 +75,7 @@
 }
 .col-1-text-1 {
   margin: 0px;
-  font-family: "Satoshi", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 14px;
@@ -108,7 +109,7 @@
   align-items: center;
 }
 .percentage-text-1{
-  font-family: "Satoshi", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 13px;
@@ -129,7 +130,7 @@
   margin: 0px;
   width: 140px;
   height: 30px;
-  font-family: "Satoshi", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 775;
   font-size: 22px;
@@ -139,7 +140,7 @@
   margin: 0px;
   width: 220.09px;
   height: 28px;
-  font-family: "Satoshi", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 450;
   font-size: 10.5px;
@@ -160,19 +161,19 @@
 .card-heading {
   margin: 0px;
   margin-top: 10px;
-  font-family: "Satoshi", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 900;
-  font-size: 26px;
+  font-weight: 400;
+  font-size: 20px;
   text-align: center;
   letter-spacing: 0.02em;
   color: #404040;
 }
 .card-heading-1,.card-heading-4{
   margin: 0px;
-  font-family: "Satoshi", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 500;
   font-size: 17px;
   text-align: center;
   letter-spacing: 0.02em;
@@ -226,7 +227,7 @@
 }
 .analysis-text {
   margin-top: 0px;
-  font-family: "Satoshi", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 13px;
   line-height: 17px;

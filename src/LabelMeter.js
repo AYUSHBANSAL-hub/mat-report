@@ -3,7 +3,7 @@ import ReactSpeedometer from "react-d3-speedometer";
 
 const CustomSegmentLabels = ({score}) => (
   <div>
-    <div>
+    <div style={{ fontFamily: 'Poppins, sans-serif', fontSize: '16px' }}>
       <ReactSpeedometer
         width={200}
         needleHeightRatio={0.50}
@@ -13,7 +13,7 @@ const CustomSegmentLabels = ({score}) => (
         segments={3}
         valueTextFontSize={"0px"}
         // dimensionUnit={"10px"}
-        labelFontSize={"14px"}
+        labelFontSize={"12px"}
         customSegmentLabels={[
           {
             text: "Bad",
