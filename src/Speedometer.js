@@ -30,8 +30,8 @@ const Speedometer = ({ value,maxvalue}) => {
         needleColor="#404040"
         ringWidth={20}
         segments={maxvalue/10}
-        startColor="#86C135"
-        endColor="#B92828"
+        endColor="#86C135"
+        startColor="#B92828"
       />
     </div>
   );
