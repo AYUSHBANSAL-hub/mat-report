@@ -14,7 +14,7 @@ import "./App.css";
 import Speedometer from "./Speedometer";
 
 const OA = (yo) => {
-  console.log(yo);
+  // console.log(yo);
   const communicate={
     "Extremely confident":5,
 "Slightly confident":3,
