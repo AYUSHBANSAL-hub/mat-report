@@ -1,6 +1,6 @@
 .progress-bar-container {
     width: 100%;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     height: 5px;
     background-color: #404040;
     border-radius: 5px;

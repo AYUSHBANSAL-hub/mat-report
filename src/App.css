@@ -27,8 +27,10 @@
 }
 .accio-nsdc{ 
   margin-top: -150px;
-  margin-left: -350px;
+  /* margin-left: -350px; */
   height: 100px;
+  width: 249px;
+  object-fit: cover;
 }
 .header-image{
   display: flex;
@@ -42,14 +44,14 @@
   font-family: "poppins", sans-serif;
   font-style: normal;
   margin-left: 25px;
-  width: 300px;
+  width: 250px;
   font-weight: 600;
   font-size: 25px;
 }
 .row-1 {
-  margin-top: -60px;
+  margin-top: 25px;
   display: flex;
-  align-items:end;
+  align-items:center;
   justify-content: space-around;
 }
 .row-1>div{
@@ -82,18 +84,18 @@
   margin: 0px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.02em;
   color: #2b2f34;
 }
 .horizontal-line{
-  height: 1px;
-  width: 100%;
+  height: 70px;
+  width: 1px;
   background-color: #494F56;
   opacity: 0.3;
-  margin: 15px auto;
+  /* margin: 15px auto; */
   border-radius: 10px;
 }
 .percentage-div {
@@ -102,22 +104,45 @@
   background: linear-gradient(90deg, rgb(105, 156, 239) 0%, rgba(70,228,252,1) 100%);
   border-radius: 19px;
   border: 1px solid #0077FF;
-  padding: 25px;
-  margin-top: 10px;
-  width: 30%;
+  padding: 10px;
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
   color: white;
 }
+.progress-header-row{
+  margin-top: -10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.progress-header-row>div:nth-child(2){
+  margin-top: -50px;
+  margin-right: 20px;
+}
 .percentage-child-1{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-inline: auto !important;
+  align-items: center;
+}
+.percentage-child-1>div:nth-child(3) {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+}
+.percentage-child-1>div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 .percentage-text-1{
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 13px;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.03rem;
   color: #000;
 }
 .percentage-text {
@@ -125,11 +150,26 @@
   font-family: "poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 41.6px;
   line-height: 43px;
   letter-spacing: 0.05em;
   color: #404040;
-  margin: 15px auto;
+  /* margin: 15px auto; */
+}
+.project-div{
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  width: 185px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+}
+.project-div>p{
+  padding: 5px;
 }
 .Analysis-text-1 {
   margin: 0px;
@@ -187,7 +227,7 @@
 }
 .card-heading-2{
   margin: 0px;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 5px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -196,6 +236,9 @@
   letter-spacing: 0.02em;
   color: #404040;
   font-weight: 900;
+}
+.dsa-card-heading-2{
+  margin-top: 80px;
 }
 .card-heading-3{
   margin: 0px;
@@ -230,6 +273,9 @@
   align-items: center;
   text-align: center;
   flex: 1;
+}
+.dsa-col{
+  margin-top: -30px;
 }
 .analysis-text {
   margin-top: 0px;

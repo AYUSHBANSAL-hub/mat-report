@@ -88,7 +88,7 @@ const OA = (yo) => {
             {/* <Bar data={DSAData} options={options} /> */}
             <Speedometer value={yo.data["DSA Score"]} maxvalue={70}/>
           </div>
-          <div className="card-heading-2">DSA Analysis-</div>
+          <div className="card-heading-2 dsa-card-heading-2">DSA Analysis-</div>
           {/* <div className="card-heading-3">{yo.data["DSA Score"]}/70</div> */}
           <div className="card-heading-3">{Overview[`DSA${DSA}`]}</div>
           
@@ -98,7 +98,6 @@ const OA = (yo) => {
         </div>
         <div className="full-stack-col">
           <div className="card ">
-            <p className="card-heading">Full Stack Dev Level</p>
             <p className="card-heading-1">{Frontend}-{yo.data["Frontend Score"]}/30</p>
             {/* <Bar data={FrontendData} options={options} /> */}
             <Speedometer value={yo.data["Frontend Score"]} maxvalue={30}/>
