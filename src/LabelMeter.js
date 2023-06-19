@@ -34,7 +34,7 @@ const CustomSegmentLabels = ({score}) => (
         ringWidth={40}
         needleTransitionDuration={3333}
         needleTransition="easeElastic"
-        needleColor={"#90f2ff"}
+        needleColor="#404040"
         textColor={"#d8dee9"}
       />
     </div>

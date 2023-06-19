@@ -53,8 +53,8 @@ const OA = (yo) => {
   const Overview={
     DSABeginner: "You are at a Beginner level in DSA and should focus on learning fundamentals of data structures before progressing to advanced topics. Here's a concise roadmap:",
     DSAIntermediate: "Good start! As an intermediate in DSA with some knowledge, focus on strengthening fundamentals of data structures and then advance to higher topics. Here's a concise roadmap:",
-    DEVBeginner: "You are currently at a Beginner level. Start by mastering the fundamentals of front-end and back-end development, popular frameworks, and gain experience through hands-on projects.Here’s a concise roadmap:",
-    DEVIntermediate: "You’re at an intermediate level. Focus on building complex projects, enhancing your proficiency in front-end and back-end frameworks, database management and deployment strategies.Here’s a concise roadmap: "
+    DEVBeginner: "You are currently at a Beginner level. Start by mastering the fundamentals of front-end and back-end development, popular frameworks, and gain experience through hands-on projects. Here’s a concise roadmap:",
+    DEVIntermediate: "You’re at an intermediate level. Focus on building complex projects, enhancing your proficiency in front-end and back-end frameworks, database management and deployment strategies. Here’s a concise roadmap: "
   }
   const [DSA, setDSA] = useState("Beginner");
   const [Frontend, setFrontend] = useState("Beginner");
@@ -84,7 +84,7 @@ const OA = (yo) => {
         <div className="dsa-col">
           <div className="card ">
             <p className="card-heading">DSA Level</p>
-            <p className="card-heading-1">{DSA} {yo.data["DSA Score"]}/70</p>
+            <p className="card-heading-1">{DSA}-{yo.data["DSA Score"]}/70</p>
             {/* <Bar data={DSAData} options={options} /> */}
             <Speedometer value={yo.data["DSA Score"]} maxvalue={70}/>
           </div>
@@ -99,7 +99,7 @@ const OA = (yo) => {
         <div className="full-stack-col">
           <div className="card ">
             <p className="card-heading">Full Stack Dev Level</p>
-            <p className="card-heading-1">{Frontend} {yo.data["Frontend Score"]}/30</p>
+            <p className="card-heading-1">{Frontend}-{yo.data["Frontend Score"]}/30</p>
             {/* <Bar data={FrontendData} options={options} /> */}
             <Speedometer value={yo.data["Frontend Score"]} maxvalue={30}/>
           </div>
