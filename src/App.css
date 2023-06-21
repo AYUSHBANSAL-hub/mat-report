@@ -171,6 +171,10 @@
 .project-div>p{
   padding: 5px;
 }
+
+.project-div>p:nth-child(2),.project-div>p:nth-child(3){
+  font-size: 14.5px;
+}
 .Analysis-text-1 {
   margin: 0px;
   width: 140px;
@@ -253,7 +257,6 @@
   line-height: 12px;
   letter-spacing: 0.02em;
   color: #494F56;
-
 }
 .card-heading-4{
   margin-top: 0px;

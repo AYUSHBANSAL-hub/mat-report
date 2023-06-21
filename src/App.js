@@ -69,7 +69,7 @@ function App(yo) {
               <img className="header-bg" src={newheader} alt="header Image" />
               <img className="accio-nsdc" src={logo} alt="header Image" />
               <div className="progress-header-row">
-                <p className="header-2">IT Job Readiness Test Report🎯</p>
+                <p className="header-2">IT Job Readiness Test Report 🎯</p>
                 <div className="percentage-div">
                   <div className="percentage-child-1">
                     <div>

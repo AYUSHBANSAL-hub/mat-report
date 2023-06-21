@@ -10,7 +10,7 @@ const styles = {
     backgroundColor: "#ffff",
     borderRadius:"15px",
     padding: "5px",
-    marginTop:"10px"
+    marginTop:"10px",
   },
 };
 
@@ -20,7 +20,7 @@ const Speedometer = ({ value,maxvalue}) => {
       <ReactSpeedometer
         maxValue={maxvalue}
         minValue={0}
-        height={100}
+        height={104}
         width={190}
         value={value}
         valueTextFontSize={"0px"}
