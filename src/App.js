@@ -116,7 +116,7 @@ function App(yo) {
                   <p style={{
                     fontWeight:"600"
                   }}>
-                    Project: 
+                    Project : {" "}
                     {
                       ProjectData[
                         `${yo.data["Have you made any projects? If yes, then choose one from the below options."]}`
